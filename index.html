@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="banner" data-bkg="accent2"></div>
@@ -26,12 +23,7 @@
           </div>
         </div>
         <div>
-          <img
-            src="/headshot.jpg"
-            alt="Devin Headshot"
-            class="headshot"
-            width="280px"
-          />
+          <img src="/headshot.jpg" alt="Devin Headshot" class="headshot" width="280px" />
           <h1 data-color="primary">Hi, I’m Devin</h1>
           <p>Welcome to my blog.</p>
         </div>
@@ -46,9 +38,8 @@
               <div>
                 <img src="/image-1.jpg" alt="Design sketches" />
                 <p>
-                  Design involves problem identification, research,
-                  brainstorming, prototyping, testing, and refining. Effective
-                  communication and feedback are crucial.
+                  Design involves problem identification, research, brainstorming, prototyping, testing, and refining.
+                  Effective communication and feedback are crucial.
                 </p>
                 <a href="#" class="btn">Read Post</a>
               </div>
@@ -58,9 +49,8 @@
               <div>
                 <img src="/image-2.jpg" alt="Coding gear" />
                 <p>
-                  My overview of preferred tech gear, from laptops to
-                  noise-cancelling headphones. I’ll include top picks and
-                  reasons behind my choices.
+                  My overview of preferred tech gear, from laptops to noise-cancelling headphones. I’ll include top
+                  picks and reasons behind my choices.
                 </p>
                 <a href="#" class="btn">Read Post</a>
               </div>
@@ -70,9 +60,8 @@
               <div>
                 <img src="/image-3.jpg" alt="Laptop on desk" />
                 <p>
-                  When learning to code, start with the basics and practice
-                  regularly with real-life projects. Don't be afraid to make
-                  mistakes or ask for help. Stay curious and keep learning.
+                  When learning to code, start with the basics and practice regularly with real-life projects. Don't be
+                  afraid to make mistakes or ask for help. Stay curious and keep learning.
                 </p>
                 <a href="#" class="btn">Read Post</a>
               </div>
@@ -84,20 +73,14 @@
             <div>
               <h2 id="newsletter-signup">New Posts to Your Inbox</h2>
               <p>
-                Stay in the loop with my blog by subscribing to my email
-                newsletter. Never miss a post and get exclusive content and
-                updates. Join now! Cancel at anytime.
+                Stay in the loop with my blog by subscribing to my email newsletter. Never miss a post and get exclusive
+                content and updates. Join now! Cancel at anytime.
               </p>
             </div>
             <form>
               <div>
                 <label for="email">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  autocomplete="email"
-                  placeholder="john@email.com"
-                />
+                <input type="email" id="email" autocomplete="email" placeholder="john@email.com" />
               </div>
               <button type="submit" class="btn">Subscribe</button>
             </form>
@@ -105,6 +88,75 @@
         </section>
       </main>
     </div>
+    <aside class="section">
+      <div class="container">
+        <div class="setting-wrapper">
+          <h2 class="h3">Custom Site Settings</h2>
+          <section class="setting" aria-label="setting sections">
+            <div class="setting-toggle">
+              <div class="toggle">
+                <input type="checkbox" id="sound" name="sound" />
+                <label for="sound">Toggle sound</label>
+                <audio id="sound-check" controls="true" autostart="0" autostart="false" preload="none">
+                  <source src="public/check.mp3" type="audio/mp3" />
+                </audio>
+                <audio id="sound-toggle" controls="true" autostart="0" autostart="false" preload="none">
+                  <source src="public/toggle.mp3" type="audio/mp3" />
+                </audio>
+              </div>
+              <div class="toggle">
+                <input type="checkbox" id="motion" name="motion" />
+                <label for="motion">Toggle motion</label>
+              </div>
+              <div class="toggle">
+                <input type="checkbox" id="round" name="round" />
+                <label for="round">Toggle square or round</label>
+              </div>
+            </div>
+            <div class="setting-radio">
+              <div class="setting-radio-box">
+                <fieldset>
+                  <legend>Website Theme</legend>
+                  <div class="radio">
+                    <input id="light" type="radio" name="theme" />
+                    <label for="light">Light</label>
+                  </div>
+                  <div class="radio">
+                    <input id="system" type="radio" name="theme" />
+                    <label for="system">System</label>
+                  </div>
+                  <div class="radio">
+                    <input id="dark" type="radio" name="theme" />
+                    <label for="dark">Dark</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="setting-radio-box">
+                <fieldset>
+                  <legend>Custom Accent</legend>
+                  <div class="radio">
+                    <input type="radio" id="primary" name="accent" />
+                    <label for="primary">primary</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" id="accent1" name="accent" />
+                    <label for="accent1">accent1</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" id="accent2" name="accent" />
+                    <label for="accent2">accent2</label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </aside>
+
     <div class="banner" data-bkg="primary"></div>
+
+    <script type="module" src="setting.js"></script>
   </body>
 </html>
